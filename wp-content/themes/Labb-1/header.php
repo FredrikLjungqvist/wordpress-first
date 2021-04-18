@@ -20,13 +20,14 @@
 
 					</div>
 					<div class="col-sm-6 hidden-xs">
-						<form id="searchform" class="searchform">
+						<?php get_search_form(); ?>
+						<!-- <form id="searchform" class="searchform">
 							<div>
 								<label class="screen-reader-text">Sök efter:</label>
 								<input type="text" />
 								<input type="submit" value="Sök" />
 							</div>
-						</form>
+						</form> -->
 					</div>
 					<div class="col-xs-4 text-right visible-xs">
 						<div class="mobile-menu-wrap">
@@ -36,15 +37,16 @@
 					</div>
 				</div>
 			</div>
-        
-		<div class="mobile-search">
-			<form id="searchform" class="searchform">
+			
+			<div class="mobile-search">
+			<?php get_search_form(); ?>
+			<!-- <form id="searchform" class="searchform">
 				<div>
 					<label class="screen-reader-text">Sök efter:</label>
 					<input type="text" />
 					<input type="submit" value="Sök" />
 				</div>
-			</form>
+			</form> -->
 		</div>
 
         

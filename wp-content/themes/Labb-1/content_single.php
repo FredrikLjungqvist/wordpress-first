@@ -11,7 +11,7 @@
             <i class="fa fa-user"></i> <a href="forfattare.html"><?php the_author();?></a>
         </li>
         <li>
-            <i class="fa fa-tag"></i> <a href="kategori.html">Kategori 1<?php the_category()?> </a>, <a href="kategori.html">Kategori 3</a>
+            <i class="fa fa-tag"></i>  <?php the_category(", "); ?> 
         </li>
     </ul>
     <p>

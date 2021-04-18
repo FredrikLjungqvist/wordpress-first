@@ -5,7 +5,7 @@ add_theme_support('widgets');
 //add_theme_support ('title-tag');
 
 register_sidebar(array(
-    "name"=>"Sidomeny",
+    "name"=>"Sidomeny Blogg",
     "id"=>"sidemenu"
 ));
 register_sidebar(array(
@@ -22,13 +22,13 @@ register_sidebar(array(
 ));
 
 
-// Changing excerpt length
+// Ändra längda på sammanfattning
  function new_excerpt_length($length) {
     return 30;
     }
     add_filter('excerpt_length', 'new_excerpt_length');
      
-    // Changing excerpt more
+    // Ändra text efter sammanfattning
     function new_excerpt_more($more) {
     return '...';
     }
@@ -69,7 +69,7 @@ function add_js_and_css(){
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/jquery.js', array ( 'jquery' ), 1.1, true);
     
 };
-//wp_enqueue_scripts();
+
 add_action('wp_footer','add_js');
 function add_js(){
     wp_enqueue_script( 'js', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);

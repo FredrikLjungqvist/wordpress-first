@@ -1,3 +1,5 @@
+<?php /* Template Name: Undersida stil 1 */ 
+?>
 <!DOCTYPE html>
 <?php
 get_header();
@@ -11,9 +13,9 @@ get_header();
                         <h1><?php the_title();?></h1>
 						<p><?php  the_content(); ?> </p>
 						</div>
-                        <!-- <div class="col-xs-12 col-sm-4 col-md-6"> -->
+                        
 							<?php the_post_thumbnail()?>
-						<!-- </div> -->
+						
 						<aside id="secondary" class="col-xs-12 col-md-3">
                         <?php
         
@@ -26,4 +28,3 @@ get_header();
 			</section>
 		</main>
         <?php get_footer(); ?>
-		
