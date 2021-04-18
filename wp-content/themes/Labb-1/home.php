@@ -9,15 +9,15 @@ get_header();
             <div id="primary" class="col-xs-12 col-md-9">
                 <h1><?php wp_title(''); ?></h1>
                 <!-- loopen -->
-                    <?php
+                        <?php
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                         get_template_part( 'content_blogg', get_post_format() );
                         endwhile; endif;
                         ?>
                         <!-- Löste sid-navigationen genom att hämta nuvarande sida och total antalet sidor -->
-                <nav class="navigation pagination">
-					<h2 class="screen-reader-text">Inläggsnavigering</h2>
-						<?php previous_posts_link( 'Föregående' ); ?>
+                    <nav class="navigation pagination">
+					    <h2 class="screen-reader-text">Inläggsnavigering</h2>
+						    <?php previous_posts_link( 'Föregående' ); ?>
 							<span class="page-numbers current">
                                 <?php 
                                 if (get_query_var( 'paged')==0) {
@@ -26,7 +26,7 @@ get_header();
                                     echo get_query_var( 'paged');
                                 }
                                 ?> 
-                                </span>
+                            </span>
                             <span>/</span>
 							<span class="page-numbers">	
                                 <?php 
@@ -36,7 +36,7 @@ get_header();
                                 ?>
                             </span>
 								<?php next_posts_link( 'Nästa' ); ?>
-							</nav>
+					</nav>
             </div>
                     <?php
                     get_sidebar("blogg");

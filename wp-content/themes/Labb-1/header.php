@@ -14,20 +14,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-8 col-sm-6">
-                    
+                    <!-- Hämtar namnet och url på sidan från databsen -->
   <a class="logo" href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a>
   
 
 					</div>
 					<div class="col-sm-6 hidden-xs">
 						<?php get_search_form(); ?>
-						<!-- <form id="searchform" class="searchform">
-							<div>
-								<label class="screen-reader-text">Sök efter:</label>
-								<input type="text" />
-								<input type="submit" value="Sök" />
-							</div>
-						</form> -->
+						
 					</div>
 					<div class="col-xs-4 text-right visible-xs">
 						<div class="mobile-menu-wrap">
@@ -40,13 +34,7 @@
 			
 			<div class="mobile-search">
 			<?php get_search_form(); ?>
-			<!-- <form id="searchform" class="searchform">
-				<div>
-					<label class="screen-reader-text">Sök efter:</label>
-					<input type="text" />
-					<input type="submit" value="Sök" />
-				</div>
-			</form> -->
+			
 		</div>
 
         
